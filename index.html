@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Dubai Property Market Webinar Programme Review — betterhomes</title>
+  <meta name="description" content="W4 results and W5 recommendations for the betterhomes Dubai Property Market webinar programme. Internal use only." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Top navigation ===== -->
+  <header class="topnav" id="topnav">
+    <div class="topnav__inner">
+      <a class="topnav__brand" href="#top">betterhomes</a>
+      <nav class="topnav__links" aria-label="Report sections">
+        <a href="#learnings">Learnings</a>
+        <a href="#health">Health Check</a>
+        <a href="#glance">W4 At A Glance</a>
+        <a href="#growth">Growth</a>
+        <a href="#sources">Sources</a>
+        <a href="#paid">Paid Media</a>
+        <a href="#markets">Markets</a>
+        <a href="#room">The Room</a>
+        <a href="#asset">Audience</a>
+        <a href="#opportunity">Opportunity</a>
+        <a href="#decisions">Decisions</a>
+      </nav>
+      <button class="topnav__toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== 1. Hero ===== -->
+    <section class="hero" aria-labelledby="reportTitle">
+      <div class="container hero__inner">
+        <p class="hero__confidential" id="heroConfidential"></p>
+        <p class="hero__brand">betterhomes</p>
+        <h1 class="hero__title" id="reportTitle"></h1>
+        <p class="hero__edition" id="heroEdition"></p>
+        <p class="hero__subtitle" id="heroSubtitle"></p>
+        <p class="hero__date" id="heroDate"></p>
+      </div>
+    </section>
+
+    <!-- ===== 2. What We Learned This Month ===== -->
+    <section class="section" id="learnings" aria-labelledby="learnings-h">
+      <div class="container">
+        <p class="section__kicker">The short version</p>
+        <h2 class="section__title" id="learnings-h">What we learned this month</h2>
+        <p class="section__lede">Four things matter from W4. Everything else in this report supports them.</p>
+        <div class="grid grid--4" id="learningCards"></div>
+      </div>
+    </section>
+
+    <!-- ===== 3. Programme Health Check ===== -->
+    <section class="section section--alt" id="health" aria-labelledby="health-h">
+      <div class="container">
+        <p class="section__kicker">Where we stand</p>
+        <h2 class="section__title" id="health-h">Programme health check</h2>
+        <p class="section__lede">A simple read on each part of the programme. Green is working, amber needs attention, red is the priority.</p>
+        <div class="grid grid--3" id="healthCards"></div>
+      </div>
+    </section>
+
+    <!-- ===== 4. W4 At A Glance ===== -->
+    <section class="section" id="glance" aria-labelledby="glance-h">
+      <div class="container">
+        <p class="section__kicker">The numbers</p>
+        <h2 class="section__title" id="glance-h">W4 at a glance</h2>
+        <p class="section__lede">Fewer people came — but the people who came stayed longer than ever.</p>
+        <div class="grid grid--3" id="kpiCards"></div>
+        <div class="insight" id="kpiInsight" role="note"></div>
+      </div>
+    </section>
+
+    <!-- ===== 5. Audience Growth Story ===== -->
+    <section class="section section--alt" id="growth" aria-labelledby="growth-h">
+      <div class="container">
+        <p class="section__kicker">The trend</p>
+        <h2 class="section__title" id="growth-h">Audience growth story</h2>
+        <p class="section__lede">Registrations have fallen since W1 — but a loyal repeat audience is forming underneath.</p>
+        <div class="chart-card">
+          <h3 class="chart-card__title">Registrations by webinar — new vs returning</h3>
+          <div class="chart-wrap">
+            <canvas id="growthChart" role="img" aria-label="Stacked bar chart of new versus returning registrations from W1 to W4. Totals fall from 1,058 in W1 to 416 in W4, while returning registrants hold near 29 percent."></canvas>
+          </div>
+        </div>
+        <div class="grid grid--3" id="growthInsights"></div>
+      </div>
+    </section>
+
+    <!-- ===== 6. Where Registrations Came From ===== -->
+    <section class="section" id="sources" aria-labelledby="sources-h">
+      <div class="container">
+        <p class="section__kicker">The channels</p>
+        <h2 class="section__title" id="sources-h">Where registrations came from</h2>
+        <p class="section__lede">Paid social did the heavy lifting. Email kept our existing audience warm.</p>
+        <div class="chart-card">
+          <h3 class="chart-card__title">W4 registrations by source</h3>
+          <div class="chart-wrap chart-wrap--tall">
+            <canvas id="sourceChart" role="img" aria-label="Horizontal bar chart of W4 registration sources. Meta paid ads 215, email CRM 123, Instagram organic 35, WhatsApp and referral 21, website pop-up 12, other 10."></canvas>
+          </div>
+        </div>
+        <div class="grid grid--3" id="sourceCommentary"></div>
+      </div>
+    </section>
+
+    <!-- ===== 7. Paid Media Learning ===== -->
+    <section class="section section--alt" id="paid" aria-labelledby="paid-h">
+      <div class="container">
+        <p class="section__kicker">The investment</p>
+        <h2 class="section__title" id="paid-h">Paid media learning</h2>
+        <p class="section__lede" id="paidKeyMessage"></p>
+        <div class="flow" id="paidFlow"></div>
+      </div>
+    </section>
+
+    <!-- ===== 8. International Markets ===== -->
+    <section class="section" id="markets" aria-labelledby="markets-h">
+      <div class="container">
+        <p class="section__kicker">The world view</p>
+        <h2 class="section__title" id="markets-h">International markets</h2>
+        <p class="section__lede">A clear traffic-light call on every market we tested.</p>
+        <div class="grid grid--3" id="marketGroups"></div>
+        <div class="insight insight--note" id="marketsNote" role="note"></div>
+      </div>
+    </section>
+
+    <!-- ===== 9. Who Was In The Room ===== -->
+    <section class="section section--alt" id="room" aria-labelledby="room-h">
+      <div class="container">
+        <p class="section__kicker">The people</p>
+        <h2 class="section__title" id="room-h">Who was in the room</h2>
+        <p class="section__lede">128 attendees, eight audience types — and a clear commercial question for W5.</p>
+        <div class="room-layout">
+          <div class="chart-card">
+            <h3 class="chart-card__title">W4 attendees by profile</h3>
+            <div class="chart-wrap chart-wrap--donut">
+              <canvas id="audienceChart" role="img" aria-label="Donut chart of W4 attendee profiles. Agents 26.6 percent, other 16.4, investors 14.8, landlords 13.3, unclassified 12.5, buyers 9.4, sellers 5.5, tenants 1.6."></canvas>
+            </div>
+          </div>
+          <div class="room-side">
+            <ul class="legend" id="audienceLegend"></ul>
+            <div class="insight" id="audienceInterpretation" role="note"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 10. Building an Audience ===== -->
+    <section class="section section--navy" id="asset" aria-labelledby="asset-h">
+      <div class="container">
+        <p class="section__kicker section__kicker--light">The bigger picture</p>
+        <h2 class="section__title section__title--light" id="asset-h">Building an audience, not just registrations</h2>
+        <div class="grid grid--3" id="assetMetrics"></div>
+        <p class="bigmessage" id="assetMessage"></p>
+      </div>
+    </section>
+
+    <!-- ===== 11. Biggest Opportunity For W5 ===== -->
+    <section class="section" id="opportunity" aria-labelledby="opportunity-h">
+      <div class="container">
+        <p class="section__kicker">The lever</p>
+        <h2 class="section__title" id="opportunity-h">The biggest opportunity for W5</h2>
+        <p class="section__lede" id="opportunityHeadline"></p>
+        <div class="calc" id="opportunityCalc"></div>
+      </div>
+    </section>
+
+    <!-- ===== 12. Key Decisions For W5 ===== -->
+    <section class="section section--alt" id="decisions" aria-labelledby="decisions-h">
+      <div class="container">
+        <p class="section__kicker">The plan</p>
+        <h2 class="section__title" id="decisions-h">Key decisions for W5</h2>
+        <p class="section__lede">Seven moves, agreed and owned before the next webinar launches.</p>
+        <div class="grid grid--3" id="decisionCards"></div>
+      </div>
+    </section>
+
+    <!-- ===== 13. Final Thoughts ===== -->
+    <section class="section section--final" id="final" aria-labelledby="final-h">
+      <div class="container container--narrow">
+        <p class="section__kicker">Closing view</p>
+        <h2 class="section__title" id="final-h">Final thoughts</h2>
+        <div class="final-copy" id="finalThoughts"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">betterhomes</span>
+      <span id="footerMeta"></span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
