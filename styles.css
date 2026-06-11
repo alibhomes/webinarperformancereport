@@ -423,7 +423,8 @@ body {
 .market-row { padding: 14px 0; border-bottom: 1px solid var(--line); }
 .market-row:last-child { border-bottom: none; }
 .market-row__name { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
-.market-row__stats { display: flex; gap: 18px; font-size: 13px; color: var(--ink-soft); }
+.market-row__stats { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--ink-soft); }
+.market-row__stats span { white-space: nowrap; }
 .market-row__stats strong { color: var(--ink); font-weight: 700; }
 
 /* Who was in the room */
