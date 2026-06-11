@@ -80,9 +80,9 @@ const REPORT = {
     },
     {
       area: "Tracking & Attribution",
-      status: "amber",
-      label: "Improve",
-      note: "Source data doesn't fully reconcile — clean UTMs before W5.",
+      status: "green",
+      label: "Strong",
+      note: "Every W4 registration was tracked with UTMs — decisions rest on clean data.",
     },
   ],
 
@@ -187,7 +187,7 @@ const REPORT = {
       {
         tone: "amber",
         title: "What changes for W5",
-        text: "Lock UTM naming before launch so every registration has a clean source, and give WhatsApp sharing a deliberate push through agents.",
+        text: "Give WhatsApp sharing a deliberate push through agents, and put more weight behind the channels that already convert — Meta and email.",
       },
     ],
   },
@@ -319,11 +319,6 @@ const REPORT = {
       title: "Strengthen the reminder sequence",
       text: "Confirmation, 24-hour, 4-hour, 30-minute and live-now messages — across email and WhatsApp.",
       tag: "Lifecycle",
-    },
-    {
-      title: "Improve source attribution",
-      text: "Lock UTM naming and source mapping before launch so W5 decisions come from clean data.",
-      tag: "Tracking",
     },
     {
       title: "Define post-webinar sales tracking",

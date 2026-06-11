@@ -11,8 +11,8 @@
   const $ = (id) => document.getElementById(id);
 
   const COLORS = {
-    navy: "#0b2545",
-    navySoft: "#2e4a6b",
+    navy: "#1f343f",
+    navySoft: "#46606e",
     green: "#1a9e6e",
     red: "#d05353",
     amber: "#d9921f",
