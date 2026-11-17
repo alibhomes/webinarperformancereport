@@ -236,27 +236,27 @@ const REPORT = {
 
   /* 8. International Markets ------------------------------------ */
   markets: {
-    note: "W6 ads targeted worldwide lookalikes plus the UK. A proper Singapore, Hong Kong or China push would need dedicated campaigns — and China specifically needs WeChat, Weibo or partner distribution.",
+    note: "Only these two audiences were actively targeted in W6. Singapore, Hong Kong, Italy and China were not part of this cycle.",
     groups: [
+      {
+        verdict: "Strongest",
+        status: "green",
+        rows: [
+          { market: "UAE core (owned channels)", regs: 215, attendees: 92, showUp: "43%" },
+        ],
+      },
       {
         verdict: "Monitor",
         status: "amber",
         rows: [
-          { market: "UK", regs: 12, attendees: 6, showUp: "50%" },
+          { market: "UK (paid + organic)", regs: 12, attendees: 6, showUp: "50%" },
         ],
       },
       {
-        verdict: "On hold",
+        verdict: "Keep testing",
         status: "amber",
         rows: [
-          { market: "Singapore / Hong Kong", regs: 0, attendees: 0, showUp: "—" },
-        ],
-      },
-      {
-        verdict: "Paused",
-        status: "red",
-        rows: [
-          { market: "Italy / China", regs: 0, attendees: 0, showUp: "—" },
+          { market: "Worldwide lookalikes (Meta)", regs: 27, attendees: 5, showUp: "19%" },
         ],
       },
     ],
