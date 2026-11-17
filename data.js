@@ -37,10 +37,10 @@ const REPORT = {
     },
     {
       tone: "positive",
-      headline: "Pinterest became our top channel",
+      headline: "WhatsApp is now the top channel",
       number: "111 registrations",
       explanation:
-        "A channel that barely featured before delivered 4 in 10 registrations — more than Meta, email and WhatsApp combined.",
+        "The WhatsApp community delivered 4 in 10 registrations — the nurture investment recommended after June is paying off.",
     },
     {
       tone: "negative",
@@ -85,9 +85,9 @@ const REPORT = {
     },
     {
       area: "Tracking & Attribution",
-      status: "green",
-      label: "Strong",
-      note: "Every registration carried a source — Zoom, Meta and registration data reconcile.",
+      status: "amber",
+      label: "Fix labels",
+      note: "Every registration carried a source, but links were mislabeled — WhatsApp traffic was tagged 'Pinterest'. Lock naming before W7.",
     },
   ],
 
@@ -172,10 +172,9 @@ const REPORT = {
   /* 6. Where Registrations Came From --------------------------- */
   sources: {
     rows: [
-      { name: "Pinterest", count: 111, share: 40 },
-      { name: "Email CRM", count: 49, share: 18 },
+      { name: "WhatsApp Community", count: 111, share: 40 },
+      { name: "Email CRM", count: 77, share: 28 },
       { name: "Meta Paid Ads", count: 31, share: 11 },
-      { name: "WhatsApp / Referral", count: 28, share: 10 },
       { name: "Agent Sharing", count: 19, share: 7 },
       { name: "Instagram Organic", count: 12, share: 4 },
       { name: "ChatGPT Ads", count: 9, share: 3 },
@@ -183,11 +182,12 @@ const REPORT = {
       { name: "PR / Media", count: 3, share: 1 },
       { name: "Other", count: 5, share: 2 },
     ],
+    note: "Source labels corrected: registrations tagged 'Pinterest' came through WhatsApp links, and 'WhatsApp'-tagged links were email sends.",
     commentary: [
       {
         tone: "positive",
         title: "What worked",
-        text: "Pinterest delivered 111 registrations and became the number one channel overnight. Email remained the engine behind the returning audience.",
+        text: "WhatsApp delivered 111 registrations — 4 in 10 — and email added 77 more. Owned channels drove over two-thirds of the list without media spend.",
       },
       {
         tone: "negative",
@@ -197,7 +197,7 @@ const REPORT = {
       {
         tone: "amber",
         title: "What changes for W7",
-        text: "Treat Pinterest as a core channel with proper budget and content, rebuild Meta prospecting creative, and formalise the agent-sharing programme that brought 19 registrations.",
+        text: "Fix the link naming that tagged WhatsApp traffic as 'Pinterest', give agents tracked share links, and rebuild Meta prospecting creative.",
       },
     ],
   },
@@ -227,9 +227,9 @@ const REPORT = {
         step: "Decision",
         title: "Total Meta investment",
         spend: "AED 3,546",
-        outcome: "Shift W7 budget to retargeting + Pinterest",
+        outcome: "Shift W7 weight to retargeting + owned channels",
         detail:
-          "Meta delivered 11% of registrations. Keep retargeting always-on, rebuild prospecting creative, and fund the channels that over-delivered.",
+          "Meta delivered 11% of registrations. Keep retargeting always-on, rebuild prospecting creative, and lean on WhatsApp and email, which over-delivered.",
       },
     ],
   },
@@ -307,9 +307,14 @@ const REPORT = {
       tag: "Programme",
     },
     {
-      title: "Double down on Pinterest",
-      text: "It became the top channel overnight. Give it dedicated budget, fresh pins per webinar and proper tracking.",
-      tag: "Media",
+      title: "Scale the WhatsApp channel",
+      text: "It delivered 4 in 10 registrations. Grow the community deliberately — broadcast lists, agent groups and a share-worthy invite format.",
+      tag: "Lifecycle",
+    },
+    {
+      title: "Fix source naming before launch",
+      text: "W6 links tagged WhatsApp traffic as 'Pinterest'. Agree one naming convention and test every link before W7 goes live.",
+      tag: "Tracking",
     },
     {
       title: "Rebuild Meta prospecting",
@@ -342,6 +347,6 @@ const REPORT = {
   finalThoughts: [
     "W6 delivered the strongest attendance rate in the programme's history and its most loyal audience to date. Nearly half of the registrants had been before, watch time held at the record levels set in June, and the session drew 21 live questions from a room where investors made up a quarter of attendees.",
     "The challenge has moved. Content, reminders and loyalty are working; acquisition is not. The three-month summer pause and a lighter paid push left W6 with the fewest new contacts of any webinar — and that, not the webinar itself, is what W7 needs to fix.",
-    "With a monthly rhythm restored, Pinterest treated as a core channel, Meta rebuilt around what converts, and deliberate sales follow-up on the repeat attendees, the programme is well positioned to grow its audience again without losing the engagement it has earned.",
+    "With a monthly rhythm restored, the WhatsApp community scaled deliberately, Meta rebuilt around what converts, and deliberate sales follow-up on the repeat attendees, the programme is well positioned to grow its audience again without losing the engagement it has earned.",
   ],
 };

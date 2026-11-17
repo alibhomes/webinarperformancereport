@@ -138,6 +138,9 @@
   $("sourceCommentary").innerHTML = REPORT.sources.commentary
     .map(miniCard)
     .join("");
+  if (REPORT.sources.note && $("sourceNote")) {
+    $("sourceNote").textContent = REPORT.sources.note;
+  }
   $("paidKeyMessage").textContent = REPORT.paidMedia.keyMessage;
   $("paidFlow").innerHTML = REPORT.paidMedia.phases
     .map(flowCard)
