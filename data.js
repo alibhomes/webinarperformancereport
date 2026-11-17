@@ -2,6 +2,11 @@
    betterhomes — Webinar Programme Review
    All report content lives here. Edit this file to update the
    report — no HTML changes needed.
+
+   Data sources (17 Nov 2026): Zoom registration, attendee and
+   Q&A reports for webinars W1–W6; Meta Ads via Supermetrics.
+   W6 figures exclude 8 internal test registrations. Attendee
+   counts exclude the host account and note-taker bots.
    ============================================================ */
 
 const REPORT = {
@@ -9,40 +14,40 @@ const REPORT = {
     confidential: "CONFIDENTIAL — Internal only",
     title: "Dubai Property Market Webinar Programme Review",
     subtitle:
-      "Understanding what drove growth, engagement and attendance — and what should change for W5.",
-    edition: "W4 Results & W5 Recommendations",
-    date: "June 2026",
+      "Understanding what drove growth, engagement and attendance — and what should change for W7.",
+    edition: "W6 Results & W7 Recommendations",
+    date: "November 2026",
   },
 
   /* 2. What We Learned This Month ------------------------------ */
   learnings: [
     {
       tone: "positive",
-      headline: "Content quality improved",
-      number: "38.2 min",
+      headline: "Attendance rate hit a record",
+      number: "42.2%",
       explanation:
-        "Average watch time was the highest of any webinar so far. People who joined stayed almost to the end.",
+        "Up from 34.6% in July and 30.8% in June. The reminder and topic fixes worked — people who registered actually came.",
+    },
+    {
+      tone: "positive",
+      headline: "The audience keeps coming back",
+      number: "47% returning",
+      explanation:
+        "130 of 275 registrants had attended a previous session — by far the highest repeat rate the programme has seen.",
+    },
+    {
+      tone: "positive",
+      headline: "Pinterest became our top channel",
+      number: "111 registrations",
+      explanation:
+        "A channel that barely featured before delivered 4 in 10 registrations — more than Meta, email and WhatsApp combined.",
     },
     {
       tone: "negative",
-      headline: "Attendance volume declined",
-      number: "128 attendees",
+      headline: "New audience is shrinking",
+      number: "145 new",
       explanation:
-        "Down from 197 in W3. Fewer people registered, and fewer of those showed up. This is the problem to fix.",
-    },
-    {
-      tone: "positive",
-      headline: "UK market validated",
-      number: "69% show-up",
-      explanation:
-        "The UK test delivered 9 attendees from 13 registrations — strong enough to scale with confidence in W5.",
-    },
-    {
-      tone: "positive",
-      headline: "Audience loyalty is increasing",
-      number: "29% returning",
-      explanation:
-        "Nearly 1 in 3 registrants had attended before. The series is building a repeat audience, not one-off leads.",
+        "The fewest new contacts of any webinar. After a three-month pause, the top of the funnel needs reinvestment.",
     },
   ],
 
@@ -52,113 +57,114 @@ const REPORT = {
       area: "Content Quality",
       status: "green",
       label: "Strong",
-      note: "Best watch time and watch rate recorded to date.",
+      note: "35-minute average watch time and 21 live questions — engagement held at record levels.",
     },
     {
       area: "Audience Growth",
-      status: "amber",
-      label: "Stabilising",
-      note: "Registrations fell again, but the decline is slowing.",
+      status: "red",
+      label: "Biggest opportunity",
+      note: "Only 145 new contacts, the lowest yet. The August–October pause cost momentum.",
     },
     {
       area: "Attendance Rate",
-      status: "red",
-      label: "Biggest opportunity",
-      note: "30.8% vs 38.1% in W3 — reminders and topic urgency need work.",
+      status: "green",
+      label: "Record high",
+      note: "42.2% of registrants attended — the best show-up rate in programme history.",
     },
     {
       area: "International Expansion",
-      status: "green",
-      label: "Positive",
-      note: "UK validated; Singapore and Hong Kong show early intent.",
+      status: "amber",
+      label: "Mixed",
+      note: "UK show-up slipped to 50% and paid UK ads were expensive this round. Keep warm, retest with a sharper hook.",
     },
     {
       area: "Audience Loyalty",
       status: "green",
-      label: "Strong",
-      note: "29% of registrants returned for another session.",
+      label: "Exceptional",
+      note: "47% of registrants and over half of the room had attended before.",
     },
     {
       area: "Tracking & Attribution",
       status: "green",
       label: "Strong",
-      note: "Every W4 registration was tracked with UTMs — decisions rest on clean data.",
+      note: "Every registration carried a source — Zoom, Meta and registration data reconcile.",
     },
   ],
 
-  /* 4. W4 At A Glance ------------------------------------------ */
+  /* 4. W6 At A Glance ------------------------------------------ */
   kpis: [
     {
       label: "Registrants",
-      value: "416",
-      previous: "W3: 517",
-      change: "−20%",
+      value: "275",
+      previous: "W5: 382",
+      change: "−28%",
       direction: "down",
       tone: "negative",
     },
     {
       label: "Attendees",
-      value: "128",
-      previous: "W3: 197",
-      change: "−35%",
+      value: "116",
+      previous: "W5: 132",
+      change: "−12%",
       direction: "down",
-      tone: "negative",
+      tone: "neutral",
+      footnote: "Attendance fell far less than registrations — the funnel converted better.",
     },
     {
       label: "Attendance Rate",
-      value: "30.8%",
-      previous: "W3: 38.1%",
-      change: "−7.3pp",
-      direction: "down",
-      tone: "negative",
+      value: "42.2%",
+      previous: "W5: 34.6%",
+      change: "+7.6pp",
+      direction: "up",
+      tone: "positive",
     },
     {
       label: "Average Watch Time",
-      value: "38.2 min",
-      previous: "W3: 28.4 min",
-      change: "+35%",
+      value: "35.0 min",
+      previous: "W5: 34.8 min",
+      change: "+0.2 min",
       direction: "up",
       tone: "positive",
     },
     {
       label: "Watch Rate",
-      value: "69.5%",
-      previous: "W3: 54.6%",
-      change: "+14.9pp",
+      value: "62.4%",
+      previous: "W5: 59.0%",
+      change: "+3.4pp",
       direction: "up",
       tone: "positive",
     },
     {
       label: "Questions Asked",
-      value: "17",
-      previous: "W3: 27",
-      change: "−37%",
-      direction: "down",
-      tone: "neutral",
-      footnote: "Smaller room, not lower interest — questions per attendee held steady.",
+      value: "21",
+      previous: "W4: 17",
+      change: "+4",
+      direction: "up",
+      tone: "positive",
+      footnote: "Compared with June — W5's Q&A log wasn't exported. Planned host prompts worked.",
     },
   ],
   kpiInsight:
-    "The decline in attendance should not be read as reduced content relevance. The people who attended watched more of the webinar than any previous audience, which means the challenge sits at the top of the funnel.",
+    "The problem from June is half solved. A record 42% of registrants showed up and nearly half the room had been before — reminders, topic and loyalty are all working. What remains is volume: W6 added the fewest new contacts of any webinar, so W7 is about refilling the top of the funnel.",
 
   /* 5. Audience Growth Story ----------------------------------- */
   growth: {
-    weeks: ["W1", "W2", "W3", "W4"],
-    newRegs: [1058, 609, 371, 297],
-    returningRegs: [0, 169, 150, 119],
-    totals: [1058, 778, 521, 416],
+    weeks: ["W1 · Apr", "W2 · Apr", "W3 · May", "W4 · Jun", "W5 · Jul", "W6 · Nov"],
+    newRegs: [1058, 609, 371, 297, 287, 145],
+    returningRegs: [0, 169, 150, 119, 95, 130],
+    totals: [1058, 778, 521, 416, 382, 275],
     insights: [
       {
-        title: "Still acquiring",
-        text: "Even at its lowest volume, W4 added 297 new contacts to the database.",
+        title: "Loyalty at a record",
+        text: "130 returning registrants — the highest ever, and the first time returns grew while totals fell.",
       },
       {
-        title: "Decline is slowing",
-        text: "Registrations fell 20% — a softer drop than the 33% decline from W2 to W3.",
+        title: "New acquisition fell",
+        text: "Only 145 new contacts joined the list, half of July's number. This is the metric to fix in W7.",
       },
       {
-        title: "Loyalty holding",
-        text: "The repeat audience has settled at around 29% of every registration list.",
+        title: "Cadence matters",
+        text: "No webinars ran from August to October. The three-month gap cost top-of-funnel momentum.",
       },
     ],
   },
@@ -166,28 +172,32 @@ const REPORT = {
   /* 6. Where Registrations Came From --------------------------- */
   sources: {
     rows: [
-      { name: "Meta Paid Ads", count: 215, share: 52 },
-      { name: "Email CRM", count: 123, share: 30 },
-      { name: "Instagram Organic", count: 35, share: 8 },
-      { name: "WhatsApp / Referral", count: 21, share: 5 },
-      { name: "Website Pop-Up", count: 12, share: 3 },
-      { name: "Other / Unknown", count: 10, share: 2 },
+      { name: "Pinterest", count: 111, share: 40 },
+      { name: "Email CRM", count: 49, share: 18 },
+      { name: "Meta Paid Ads", count: 31, share: 11 },
+      { name: "WhatsApp / Referral", count: 28, share: 10 },
+      { name: "Agent Sharing", count: 19, share: 7 },
+      { name: "Instagram Organic", count: 12, share: 4 },
+      { name: "ChatGPT Ads", count: 9, share: 3 },
+      { name: "Website Pop-Up", count: 8, share: 3 },
+      { name: "PR / Media", count: 3, share: 1 },
+      { name: "Other", count: 5, share: 2 },
     ],
     commentary: [
       {
         tone: "positive",
         title: "What worked",
-        text: "Meta paid ads delivered over half of all registrations and was the right engine for testing new international audiences quickly.",
+        text: "Pinterest delivered 111 registrations and became the number one channel overnight. Email remained the engine behind the returning audience.",
       },
       {
         tone: "negative",
-        title: "What didn't scale enough",
-        text: "Email held its ground as a retention channel, but organic, referral and the website together produced fewer than 70 registrations.",
+        title: "What didn't scale",
+        text: "Meta paid ads delivered 31 registrations — 11% of the total, down from over half in June — and UK prospecting ads converted poorly.",
       },
       {
         tone: "amber",
-        title: "What changes for W5",
-        text: "Give WhatsApp sharing a deliberate push through agents, and put more weight behind the channels that already convert — Meta and email.",
+        title: "What changes for W7",
+        text: "Treat Pinterest as a core channel with proper budget and content, rebuild Meta prospecting creative, and formalise the agent-sharing programme that brought 19 registrations.",
       },
     ],
   },
@@ -195,60 +205,58 @@ const REPORT = {
   /* 7. Paid Media Learning -------------------------------------- */
   paidMedia: {
     keyMessage:
-      "W4 paid media should be read as a learning sprint, not a pure lead-generation campaign.",
+      "Meta played a supporting role this time. Retargeting earned its budget; cold UK prospecting did not.",
     phases: [
       {
         step: "Test",
-        title: "Narrow UK & Italy audiences",
-        spend: "AED 1,601",
-        outcome: "Insufficient scale",
+        title: "UK prospecting re-test",
+        spend: "AED 829",
+        outcome: "3 registrations · AED 276 each",
         detail:
-          "Audience definitions were too narrow to deliver volume or a confident read.",
+          "W4 validated UK intent, but this round showed cold UK ads need a sharper, UK-specific hook to pay back.",
       },
       {
         step: "Learning",
-        title: "Broader international setup",
-        spend: "AED 1,474",
-        outcome: "Improved UK / SG / HK signal",
+        title: "Worldwide lookalikes + retargeting",
+        spend: "AED 2,717",
+        outcome: "32 registrations · AED 85 blended",
         detail:
-          "Opening up the targeting surfaced real intent in the UK, Singapore and Hong Kong.",
+          "Retargeting warm audiences was the most efficient spend at AED 73 per registration; lookalikes held at AED 90.",
       },
       {
         step: "Decision",
-        title: "Total international learning spend",
-        spend: "AED 3,075",
-        outcome: "Spend against validated segments in W5",
+        title: "Total Meta investment",
+        spend: "AED 3,546",
+        outcome: "Shift W7 budget to retargeting + Pinterest",
         detail:
-          "Keep the broader structure, separate UAE always-on from international tests, and define success metrics before launch.",
+          "Meta delivered 11% of registrations. Keep retargeting always-on, rebuild prospecting creative, and fund the channels that over-delivered.",
       },
     ],
   },
 
   /* 8. International Markets ------------------------------------ */
   markets: {
-    note: "China cannot be judged through standard Meta or LinkedIn channels. A proper China test would require WeChat, Weibo or partner distribution.",
+    note: "W6 ads targeted worldwide lookalikes plus the UK. A proper Singapore, Hong Kong or China push would need dedicated campaigns — and China specifically needs WeChat, Weibo or partner distribution.",
     groups: [
-      {
-        verdict: "Scale",
-        status: "green",
-        rows: [
-          { market: "UK", regs: 13, attendees: 9, showUp: "69%" },
-        ],
-      },
       {
         verdict: "Monitor",
         status: "amber",
         rows: [
-          { market: "Singapore", regs: 3, attendees: 2, showUp: "67%" },
-          { market: "Hong Kong", regs: 2, attendees: 2, showUp: "100%" },
+          { market: "UK", regs: 12, attendees: 6, showUp: "50%" },
         ],
       },
       {
-        verdict: "Pause",
+        verdict: "On hold",
+        status: "amber",
+        rows: [
+          { market: "Singapore / Hong Kong", regs: 0, attendees: 0, showUp: "—" },
+        ],
+      },
+      {
+        verdict: "Paused",
         status: "red",
         rows: [
-          { market: "Italy", regs: 3, attendees: 1, showUp: "33%" },
-          { market: "China / Shanghai", regs: 0, attendees: 0, showUp: "—" },
+          { market: "Italy / China", regs: 0, attendees: 0, showUp: "—" },
         ],
       },
     ],
@@ -257,80 +265,83 @@ const REPORT = {
   /* 9. Who Was In The Room -------------------------------------- */
   audience: {
     rows: [
-      { segment: "Agents", count: 34, share: 26.6 },
-      { segment: "Other", count: 21, share: 16.4 },
-      { segment: "Investors", count: 19, share: 14.8 },
-      { segment: "Landlords", count: 17, share: 13.3 },
-      { segment: "Unclassified", count: 16, share: 12.5 },
-      { segment: "Buyers", count: 12, share: 9.4 },
-      { segment: "Sellers", count: 7, share: 5.5 },
-      { segment: "Tenants", count: 2, share: 1.6 },
+      { segment: "Agents", count: 52, share: 44.8 },
+      { segment: "Investors", count: 28, share: 24.1 },
+      { segment: "Landlords", count: 14, share: 12.1 },
+      { segment: "Buyers", count: 8, share: 6.9 },
+      { segment: "Tenants", count: 8, share: 6.9 },
+      { segment: "Sellers", count: 6, share: 5.2 },
     ],
     interpretation:
-      "Agents remain the largest segment. This is useful for referral reach, but W5 should push harder on investors, buyers and landlords if the objective is direct commercial acquisition.",
+      "Investors grew to a quarter of the room, up from 15% in June — the Future Living topic pulled the right people. Agents remain the largest group; W7 should decide deliberately whether to lean into agent referrals or re-weight targeting toward end clients.",
   },
 
   /* 10. Building an Audience ------------------------------------ */
   audienceAsset: {
     metrics: [
-      { value: "2,335", label: "unique registrants", sub: "across W1–W4" },
-      { value: "827", label: "unique attendees", sub: "the strongest pool for sales follow-up" },
-      { value: "29%", label: "returning registrations", sub: "repeat audience in W4" },
+      { value: "2,767", label: "unique registrants", sub: "across W1–W6" },
+      { value: "47%", label: "returning registrations", sub: "a programme record in W6" },
+      { value: "61", label: "repeat attendees in the room", sub: "the hottest list for sales follow-up" },
     ],
     keyMessage:
       "The webinar programme is creating an owned audience asset that can support future webinars, market updates, WhatsApp nurture and sales outreach.",
   },
 
-  /* 11. Biggest Opportunity For W5 ------------------------------ */
+  /* 11. Biggest Opportunity For W7 ------------------------------ */
   opportunity: {
     headline:
-      "The fastest growth lever is increasing attendance rate above 35%, not necessarily increasing media spend.",
+      "Attendance is no longer the bottleneck. At today's 42% show-up rate, every 100 new registrants produce 42 attendees — the fastest lever for W7 is new-audience acquisition.",
     steps: [
-      { label: "Actual W4 attendees", value: "128" },
-      { label: "If W4 had matched W3's attendance rate", value: "158" },
-      { label: "Additional attendees", value: "+30", tone: "positive" },
-      { label: "Growth opportunity", value: "+23%", tone: "positive" },
+      { label: "Actual W6 attendees", value: "116" },
+      { label: "If W7 restores July's new-contact volume", value: "~176" },
+      { label: "Additional attendees", value: "+60", tone: "positive" },
+      { label: "Growth opportunity", value: "+52%", tone: "positive" },
     ],
   },
 
-  /* 12. Key Decisions For W5 ------------------------------------ */
+  /* 12. Key Decisions For W7 ------------------------------------ */
   decisions: [
     {
-      title: "Scale UK targeting",
-      text: "Give the UK its own ad set, creative hook and reminder timing aligned to UK working hours.",
+      title: "Restore the monthly cadence",
+      text: "The August–October gap preceded the steepest drop in new contacts. Lock W7 in for December and hold the rhythm.",
+      tag: "Programme",
+    },
+    {
+      title: "Double down on Pinterest",
+      text: "It became the top channel overnight. Give it dedicated budget, fresh pins per webinar and proper tracking.",
       tag: "Media",
     },
     {
-      title: "Continue Singapore & Hong Kong testing",
-      text: "Keep both in the plan at controlled spend. Judge them on attendance quality, not volume.",
+      title: "Rebuild Meta prospecting",
+      text: "Keep retargeting always-on (AED 73 per registration) and relaunch prospecting with new creative and broader audiences.",
       tag: "Media",
     },
     {
-      title: "Pause Italy",
-      text: "Park the market until there is a better message and time-zone hypothesis.",
-      tag: "Media",
+      title: "Formalise agent sharing",
+      text: "Agents brought 19 registrations informally. Give them share kits and tracked links, and recognise the top sharers.",
+      tag: "Referral",
     },
     {
-      title: "Refresh the webinar topic",
-      text: "Package W5 as a timely mid-year Dubai market check with a sharper investor and buyer promise.",
-      tag: "Content",
-    },
-    {
-      title: "Strengthen the reminder sequence",
-      text: "Confirmation, 24-hour, 4-hour, 30-minute and live-now messages — across email and WhatsApp.",
-      tag: "Lifecycle",
-    },
-    {
-      title: "Define post-webinar sales tracking",
-      text: "Agree lead-quality rules before launch and log call outcomes within 48 hours of the session.",
+      title: "Work the 61 repeat attendees",
+      text: "They have shown up twice or more. Route them to sales for personal follow-up within 48 hours of each session.",
       tag: "Sales",
+    },
+    {
+      title: "Rethink UK paid",
+      text: "Pause cold UK ads until there is a UK-specific hook. Serve the UK audience through email and retargeting meanwhile.",
+      tag: "Media",
+    },
+    {
+      title: "Keep the planned Q&A prompts",
+      text: "21 questions, up from 17 in June — the scripted host prompts recommended after W4 are working.",
+      tag: "Content",
     },
   ],
 
   /* 13. Final Thoughts ------------------------------------------ */
   finalThoughts: [
-    "W4 delivered the strongest engagement metrics achieved by the webinar programme to date. The data suggests the content remains valuable and that attendees continue to find the sessions useful.",
-    "The next stage of growth will not come from changing the webinar itself. It will come from improving audience acquisition, increasing attendance rates and building a stronger commercial follow-up process.",
-    "With a refreshed topic, improved reminder cadence and focused investment in validated international markets such as the UK, the programme is well positioned to return to growth while maintaining the engagement levels achieved in W4.",
+    "W6 delivered the strongest attendance rate in the programme's history and its most loyal audience to date. Nearly half of the registrants had been before, watch time held at the record levels set in June, and the session drew 21 live questions from a room where investors made up a quarter of attendees.",
+    "The challenge has moved. Content, reminders and loyalty are working; acquisition is not. The three-month summer pause and a lighter paid push left W6 with the fewest new contacts of any webinar — and that, not the webinar itself, is what W7 needs to fix.",
+    "With a monthly rhythm restored, Pinterest treated as a core channel, Meta rebuilt around what converts, and deliberate sales follow-up on the repeat attendees, the programme is well positioned to grow its audience again without losing the engagement it has earned.",
   ],
 };
